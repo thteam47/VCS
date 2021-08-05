@@ -1076,7 +1076,7 @@ func UpdateStatusCache() {
 
 func main() {
 	for {
-		//go SendMail("thteam47@gmail.com")
+		go SendMail("thteam47@gmail.com")
 		go UpdateStatus()
 		go UpdateStatusCache()
 		lis, err := net.Listen("tcp", ":9090")
